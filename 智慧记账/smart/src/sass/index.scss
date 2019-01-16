@@ -1,0 +1,109 @@
+@import "common.scss";
+@import "mixin.scss";
+.wrap{
+    width:100%;
+    height:100%;
+    @include box_flex;
+    @include direction(column);
+}
+header{
+    width:100%;
+    height:pxTorem(44px);
+    @include box_flex;
+    @include justify(space-between);
+    @include align;
+    padding:0 pxTorem(15px);
+    box-sizing:border-box;
+    font-size:pxTorem(20px);
+}
+section{
+    flex:1;
+    @include box_flex;
+    @include direction(column);
+    .title{
+        width:100%;
+        height:pxTorem(120px);
+        background:url(../images/9484.jpg) no-repeat;
+        background-size:cover;
+        @include box_flex;
+        @include justify(space-around);
+        @include align;
+        h2{
+            span{
+                display:block;
+                @include box_flex;
+                @include justify(center);
+                @include align;
+                font-size:pxTorem(16px);
+            }
+        }
+    }
+    .con{
+        flex:1;
+        overflow: hidden;
+        padding:0 pxTorem(15px);
+        box-sizing:border-box;
+        .list{
+            @include box_flex;
+            @include direction(column);
+            .bill{
+                @include box_flex;
+                width:100%;
+                height:pxTorem(80px);
+                padding:pxTorem(5px) 0;
+                box-sizing:border-box;
+                @include align;
+                border-bottom:pxTorem(1px) solid #ccc;
+                img{
+                    width:pxTorem(50px);
+                    height:pxTorem(50px);
+                    border-radius:50%;
+                    margin-right:pxTorem(10px);
+                }
+                .name{
+                    font-size:pxTorem(16px);
+                    margin-right:pxTorem(10px);
+                }
+                p{
+                    font-size:pxTorem(14px);
+                    flex:1;
+                }
+                .num{
+                    font-size:pxTorem(18px);
+                    font-weight:bold;
+                    margin:0 pxTorem(10px);
+                    color:green;
+                    &.active{
+                        color:red;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    width:100%;
+    height:pxTorem(44px);
+    @include box_flex;
+    @include justify(space-around);
+    @include align;
+    align-items:center;
+    border-top:pxTorem(1px) solid #ccc;
+    img{
+        width:pxTorem(20px);
+        height:pxTorem(20px);
+    }
+}
+.aside{
+    position: absolute;
+    left:50%;
+    bottom:pxTorem(40px);
+    width:pxTorem(80px);
+    height:pxTorem(80px);
+    background:orange;
+    border-radius:50%;
+    margin-left:pxTorem(-40px);
+    text-align:center;
+    line-height:pxTorem(80px);
+    font-size:pxTorem(40px);
+}

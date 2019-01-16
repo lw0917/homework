@@ -1,0 +1,93 @@
+@import "common.scss";
+@import "mixin.scss";
+.wrap{
+    width:100%;
+    height:100%;
+    @include box_flex;
+    @include direction(column);
+}
+header{
+    width:100%;
+    height:pxTorem(44px);
+    @include box_flex;
+    @include justify(center);
+    @include align;
+    span{
+        margin:0 pxTorem(10px);
+        width:pxTorem(80px);
+        height:pxTorem(30px);
+        border:pxTorem(1px) solid orange;
+        text-align:center;
+        line-height:pxTorem(30px);
+        &.active{
+            background:orange;
+            color:#fff;
+        }
+    }
+}
+section{
+    flex:1;
+    @include box_flex;
+    @include direction(column);
+    padding:0 pxTorem(15px);
+    box-sizing:border-box;
+    .title{
+          width:100%;
+          height:pxTorem(44px);
+          @include box_flex;
+          @include align;
+          font-size:pxTorem(16px);
+          border-bottom:pxTorem(1px) solid #ccc;
+          margin-bottom:pxTorem(10px);
+          span{
+              margin:0 pxTorem(10px);
+          }
+          input{
+              flex:1;
+              text-align:right;
+          }
+    }
+    .list{
+        float: 1;
+        width:100%;
+        overflow: hidden;
+        div{
+            @include box_flex;
+            flex-wrap: wrap;
+            dl{
+                width:20%;
+                height:pxTorem(80px);
+                @include box_flex;
+                @include direction(column);
+                @include align;
+                @include justify(center);
+                text-align:center;
+                img{
+                    width:pxTorem(40px);
+                    height:pxTorem(40px);
+                    border-radius:50%;
+                }
+               
+            }
+        }
+    }
+    img{
+        width:pxTorem(30px);
+        height:pxTorem(30px);
+    }
+}
+footer{
+      width:100%;
+      height:pxTorem(44px);
+      @include box_flex;
+      @include justify(space-around);
+      @include align;
+      button{
+             border:pxTorem(1px) solid orange;
+             background:#fff;
+             text-align:center;
+             line-height:pxTorem(30px);
+            width:pxTorem(120px);
+            font-size:pxTorem(20px);
+      }
+}
