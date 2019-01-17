@@ -3,7 +3,6 @@ require.config({
     paths:{
         flex:'./libs/flexible',
         jquery:'./libs/jquery',
-        bscroll:'./libs/better-scroll',
-        swiper:'./libs/swiper.min'
+        bscroll:'./libs/better-scroll'
     }
 })

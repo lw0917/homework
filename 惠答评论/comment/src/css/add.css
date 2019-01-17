@@ -177,87 +177,115 @@ html {
   display: flex;
   flex-direction: column;
   font-size: 0.37333rem;
-  background: #efefef; }
+  position: relative;
+  overflow: hidden; }
 
 header {
   width: 100%;
-  height: 2.13333rem;
+  height: 1.06667rem;
   display: flex;
-  flex-direction: column;
   padding: 0 0.4rem;
-  background: #fff;
-  margin-bottom: 0.53333rem; }
-  header .head {
-    width: 100%;
-    height: 1.06667rem;
-    line-height: 1.06667rem;
-    display: flex;
-    font-size: 0.42667rem;
-    font-weight: bold; }
-    header .head span {
-      margin-right: 0.53333rem; }
-  header .number {
-    width: 100%;
-    height: 1.06667rem;
-    line-height: 1.06667rem;
-    padding: 0 0.4rem;
-    font-size: 0.8rem;
-    color: rgba(15, 155, 57, 0.959); }
+  background: #2727b9;
+  justify-content: space-between;
+  font-size: 0.53333rem;
+  color: #fff;
+  align-items: center; }
+  header span {
+    width: 0.8rem; }
 
 section {
   flex: 1;
-  display: flex;
-  flex-direction: column; }
-  section .ban {
-    width: 100%;
-    height: 2.13333rem;
-    margin-bottom: 0.53333rem;
-    overflow: hidden;
-    background: #fff; }
-    section .ban .banner {
-      width: 100%;
-      height: 100%; }
-      section .ban .banner .swiper-slide {
-        display: flex; }
-        section .ban .banner .swiper-slide dl {
-          width: 25%;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          text-align: center; }
-          section .ban .banner .swiper-slide dl dt {
-            margin-top: 0.26667rem; }
-            section .ban .banner .swiper-slide dl dt img {
-              width: 1.06667rem;
-              height: 1.06667rem; }
-          section .ban .banner .swiper-slide dl.active {
-            background: rgba(15, 155, 57, 0.959); }
-  section .intro {
-    width: 100%;
-    height: 1.06667rem;
-    padding: 0 0.4rem;
-    background: #fff;
-    display: flex; }
-    section .intro span {
+  overflow: hidden; }
+  section .content {
+    display: flex;
+    flex-direction: column; }
+    section .content h2 {
       line-height: 1.06667rem;
-      margin-right: 0.26667rem; }
-    section .intro input {
-      flex: 1;
-      height: 1.06667rem; }
+      border-bottom: 0.02667rem solid #ccc;
+      padding: 0 0.26667rem;
+      font-weight: bold;
+      font-size: 0.42667rem; }
+    section .content p {
+      padding: 0.26667rem;
+      line-height: 0.66667rem; }
 
 footer {
   width: 100%;
   height: 1.33333rem;
   padding: 0 0.53333rem;
+  background: #efefef;
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  footer span {
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.42667rem;
+  border-top: 0.02667rem solid #ccc; }
+
+.mask {
+  position: absolute;
+  left: 0;
+  top: 1.06667rem;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 2.13333rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.06667rem;
+  display: none; }
+  .mask .title {
     width: 100%;
-    height: 100%;
-    display: block;
-    background: rgba(15, 155, 57, 0.959);
-    text-align: center;
-    line-height: 1.33333rem;
+    height: 1.06667rem;
+    background: #fff;
+    border-bottom: 0.02667rem solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 0.42667rem;
-    color: #fff; }
+    font-weight: bold; }
+    .mask .title span {
+      width: 0.8rem; }
+  .mask .con {
+    flex: 1;
+    background: #fff;
+    overflow: hidden; }
+    .mask .con ul {
+      padding: 0.26667rem; }
+      .mask .con ul li {
+        display: flex;
+        border-bottom: 0.02667rem solid #ccc;
+        margin: 0.26667rem 0;
+        padding-bottom: 0.26667rem; }
+        .mask .con ul li img {
+          width: 0.8rem;
+          height: 0.8rem;
+          border-radius: 50%;
+          margin-right: 0.26667rem; }
+        .mask .con ul li .right {
+          display: flex;
+          flex-direction: column; }
+          .mask .con ul li .right h2 {
+            line-height: 0.8rem; }
+            .mask .con ul li .right h2 span {
+              font-size: 0.42667rem;
+              font-weight: bold;
+              margin-right: 0.4rem; }
+          .mask .con ul li .right p {
+            line-height: 0.66667rem;
+            color: #f1e2e2fd; }
+  .mask .foot {
+    width: 100%;
+    height: 1.06667rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.4rem;
+    align-items: center;
+    border-top: 0.02667rem solid #ccc; }
+    .mask .foot span {
+      margin-left: 0.26667rem;
+      color: #2727b9;
+      font-weight: bold; }
+    .mask .foot input {
+      flex: 1; }
+  .mask.active {
+    display: flex; }

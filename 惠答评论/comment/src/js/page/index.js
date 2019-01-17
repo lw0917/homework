@@ -26,25 +26,24 @@ require(['./js/main.js'],function(){
        }
     
        function renderList(data){
-             var str='',
-                 sum=0;
+             var str='';
              data.forEach(function(file){
-                  sum+=file.num*1;
-                  str+=` <div class="con">
-                            <img src="./images/${file.src}" alt="">
-                            <div class="title">
-                               <h2>${file.title}</h2>
-                               <p>${file.intro}</p>
-                            </div>
-                            <span>${file.num}</span>      
-                         </div>`
+                  str+=`<div class="con" data-id="${file._id}">
+                          <h2>${file.title}</h2>
+                          <p>${file.con}</p>
+                          <div class="foot">
+                            <span>收藏<b>${file.like}</b></span>
+                            <span>有用<b>${file.collect}</b></span>
+                            <span>评论<b>${file.com.length}</b></span>
+                          </div>
+                       </div>`
                 })
-            $('.sum').html(sum);
             $('.list').html(str);
        }
        function addEvent(){
-            $('.btn').on('click',function(){
-                location.href='./page/add.html';
+            $('.list').on('click','.con',function(){
+                var id=$(this).attr('data-id');
+                location.href='./page/add.html?id='+id;
             })
        }
 
