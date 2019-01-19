@@ -10,21 +10,37 @@
 <body>
       <div class="wrap">
           <header>
-                <h2>绿豆旅行记账</h2>
-                <div class="head">
-                      <h2>我的默认旅行账单</h2>
-                      <h1 class="sum">0.00</h1>
-                      <h2>我的消费</h2>
-                </div>
+                <h2>
+                      <span>第1天</span>
+                      <span>初阶练习</span>
+                      <span>乘法口诀</span>
+                </h2>
+                <span class="num"></span>
           </header>
           <section>
-                 <div class="list">
-                        <!-- 渲染账单数据  -->
-                 </div>
+                  <div class="title"></div>
+                  <ul>
+                        <!-- 题目选项 -->
+                  </ul>
+                  <div class="con">答案：<span class="result"></span></div>
           </section>
           <footer>
-            <span class="btn">+</span>
+            <span class="btn">下一题</span>
           </footer>
+          <div class="mask hidden">
+                  <div class="mask-con">
+                          <span class="close">X</span>
+                          <h2>请选择跳过的原因</h2>
+                          <ol>
+                                <li>此题超出我的能力</li>
+                                <li>此题超纲</li>
+                                <li>此题有错误</li>
+                                <li>题意不明确</li>
+                          </ol>
+                          <p><textarea name="" id=""  placeholder="请手动输入原因" class="ipt"></textarea></p>  
+                          <span class="sub">提交</span>
+                  </div>
+          </div>
       </div>
       <script src="./js/libs/require.js" data-main="./js/page/index.js"></script>
 </body>

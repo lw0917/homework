@@ -2,8 +2,6 @@ require.config({
     baseUrl:'/js/',
     paths:{
         flex:'./libs/flexible',
-        jquery:'./libs/jquery',
-        bscroll:'./libs/better-scroll',
-        swiper:'./libs/swiper.min'
+        jquery:'./libs/jquery'
     }
 })

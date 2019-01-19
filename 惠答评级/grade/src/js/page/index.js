@@ -1,5 +1,5 @@
 require(['./js/main.js'],function(){
-    require(['jquery','bscroll','flex'],function($,bscroll){
+    require(['jquery','bscroll'],function($,bscroll){
         init(); 
        function init(){
            //初始化滚动
@@ -8,9 +8,9 @@ require(['./js/main.js'],function(){
                click:true
            })
           //加载数据并渲染
-          loadData();
+        //  loadData();
           //添加页面的点击事件
-          addEvent();
+        //  addEvent();
        }
     
        function loadData(){
