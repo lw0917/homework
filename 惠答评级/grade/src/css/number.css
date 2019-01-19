@@ -177,56 +177,55 @@ html {
   display: flex;
   flex-direction: column;
   font-size: 0.37333rem;
-  background: #efefef; }
+  position: relative;
+  overflow: hidden; }
 
 header {
   width: 100%;
   height: 1.06667rem;
-  padding: 0 0.4rem;
   display: flex;
-  background: #fff;
-  line-height: 1.06667rem;
-  font-size: 0.42667rem;
-  font-weight: bold; }
+  padding: 0 0.4rem;
+  background: #2727b9;
+  justify-content: space-between;
+  font-size: 0.53333rem;
+  color: #fff;
+  align-items: center; }
   header span {
-    margin-right: 0.4rem; }
+    width: 0.8rem; }
 
 section {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background: #fff; }
-  section h2 {
-    width: 100%;
-    height: 1.33333rem;
-    line-height: 1.33333rem;
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: rgba(15, 155, 57, 0.959);
-    text-align: center;
-    margin-bottom: 0.53333rem; }
+  overflow: hidden; }
+  section .content {
+    display: flex;
+    flex-direction: column; }
+    section .content h2 {
+      line-height: 1.06667rem;
+      border-bottom: 0.02667rem solid #ccc;
+      padding: 0 0.26667rem;
+      font-weight: bold;
+      font-size: 0.42667rem; }
+    section .content p {
+      padding: 0.26667rem;
+      line-height: 0.66667rem; }
 
 footer {
   width: 100%;
-  height: 4.26667rem;
-  overflow: hidden; }
-  footer ul {
-    width: 100%;
-    height: 100%;
-    border-left: 0.02667rem solid #ccc;
-    border-top: 0.02667rem solid #ccc; }
-    footer ul li {
-      width: 100%;
-      height: 1.06667rem; }
-      footer ul li span {
-        display: inline-block;
-        width: 24%;
-        height: pxtorem(40px);
-        text-align: center;
-        line-height: 1.06667rem;
-        border-right: 0.02667rem solid #fff;
-        border-bottom: 0.02667rem solid #fff;
-        font-size: 0.42667rem; }
-      footer ul li:nth-child(4) span:nth-child(3) {
-        width: 49%; }
+  height: 1.33333rem;
+  padding: 0 0.4rem;
+  background: #efefef;
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.02667rem solid #ccc; }
+  footer .left p {
+    line-height: 0.66667rem; }
+  footer .right {
+    display: flex;
+    align-items: center; }
+    footer .right span {
+      font-size: 0.8rem;
+      margin: 0 0.13333rem;
+      color: #ccc; }
+      footer .right span.icon-favoritesfilling {
+        color: #2727b9;
+        font-size: 0.74667rem; }

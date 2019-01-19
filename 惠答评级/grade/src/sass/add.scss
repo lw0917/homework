@@ -11,99 +11,29 @@
     background:#efefef;
 }
 header{
-      width:100%;
-      height:pxTorem(80px);
-      display:flex;
-      flex-direction: column;
-      padding:0 pxTorem(15px);
-      background:#fff;
-      margin-bottom:pxTorem(20px);
-      .head{
-          width:100%;
-          height:pxTorem(40px);
-          line-height:pxTorem(40px);
-          display:flex;
-            font-size:pxTorem(16px);
-              font-weight:bold;
-          span{
-              margin-right:pxTorem(20px);
-          }
-        }
-        .number{
-            width:100%;
-            height:pxTorem(40px);
-            line-height:pxTorem(40px);
-            padding:0 pxTorem(15px);
-            font-size:pxTorem(30px);
-            color:rgba(15, 155, 57, 0.959);
-        }
+    width:100%;
+    height:pxTorem(40px);
+    display:flex;
+    padding:0 pxTorem(15px);
+    background:rgb(39, 39, 185);
+    justify-content:space-between;
+    font-size:pxTorem(20px);
+    color:#fff;
+    align-items:center;
+    span{
+        width:pxTorem(30px);
+    }
 }
 section{
     flex:1;
-     display:flex;
-     flex-direction: column;
-     .ban{
-         width:100%;
-         height:pxTorem(80px);
-         margin-bottom:pxTorem(20px);
-         overflow: hidden;
-         background:#fff;
-         .banner{
+    .list{
+         li{
              width:100%;
-             height:100%;
-             .swiper-slide{
-                 display:flex;
-                 dl{
-                     width:25%;
-                     height:100%;
-                     display:flex;
-                     flex-direction: column;
-                     text-align:center;
-                    dt{
-                        margin-top:pxTorem(10px);
-                        img{
-                            width:pxTorem(40px);
-                            height:pxTorem(40px);
-                        }
-                    }
-                    &.active{
-                        background:rgba(15, 155, 57, 0.959);
-                    }
-                 }
-             }
+             height:pxTorem(44px);
+             line-height:pxTorem(44px);
+             background:#fff;
+             margin-bottom:pxTorem(10px);
+             padding:0 pxTorem(15px);
          }
-     }
-     .intro{
-         width:100%;
-         height:pxTorem(40px);
-         padding:0 pxTorem(15px);
-         background:#fff;
-         display:flex;
-         span{
-             line-height:pxTorem(40px);
-             margin-right:pxTorem(10px);
-         }
-         input{
-             flex:1;
-             height:pxTorem(40px);
-         }
-     }
-}
-footer{
-    width:100%;
-    height:pxTorem(50px);
-    padding:0 pxTorem(20px);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    span{
-        width:100%;
-        height:100%;
-        display:block;
-        background:rgba(15, 155, 57, 0.959);
-        text-align: center;
-        line-height:pxTorem(50px);
-        font-size:pxTorem(16px);
-        color:#fff; 
-    }    
+    }
 }

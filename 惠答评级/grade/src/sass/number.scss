@@ -8,67 +8,66 @@
     display:flex;
     flex-direction: column;
     font-size:pxTorem(14px);
-    background:#efefef;
+    position: relative;
+    overflow: hidden;
 }
 header{
       width:100%;
       height:pxTorem(40px);
-      padding:0 pxTorem(15px);
       display:flex;
-      background:#fff;
-      line-height:pxTorem(40px);
-      font-size:pxTorem(16px);
-      font-weight:bold;
+      padding:0 pxTorem(15px);
+      background:rgb(39, 39, 185);
+      justify-content:space-between;
+      font-size:pxTorem(20px);
+      color:#fff;
+      align-items:center;
       span{
-          margin-right:pxTorem(15px);
+          width:pxTorem(30px);
       }
 }
 section{
      flex:1;
-     display:flex;
-     flex-direction: column;
-     justify-content:flex-end;
-     background:#fff;
-     h2{
-         width:100%;
-         height:pxTorem(50px);
-         line-height:pxTorem(50px);
-         font-size:pxTorem(30px);
-         font-weight:bold;
-         color: rgba(15, 155, 57, 0.959);
-         text-align:center;
-         margin-bottom:pxTorem(20px);
+     overflow: hidden;
+     .content{
+           display:flex;
+           flex-direction: column;
+           h2{
+               line-height:pxTorem(40px);
+               border-bottom:pxTorem(1px) solid #ccc;
+               padding:0 pxTorem(10px);
+               font-weight:bold;
+               font-size:pxTorem(16px);
+           }
+           p{
+               padding:pxTorem(10px);
+               line-height:pxTorem(25px);
+           }
      }
 }
 footer{
     width:100%;
-    height:pxTorem(160px);
-    overflow: hidden;
-    ul{
-        width:100%;
-        height:100%;
-        border-left:pxTorem(1px) solid #ccc;
-        border-top:pxTorem(1px) solid #ccc;
-        li{
-            width:100%;
-            height:pxTorem(40px);
-            span{
-                display:inline-block;
-                width:24%;
-                height:pxtorem(40px);
-                text-align:center;
-                line-height:pxTorem(40px);
-                border-right:pxTorem(1px) solid #fff;
-                border-bottom:pxTorem(1px) solid #fff;
-                font-size:pxTorem(16px);
-            }
-          &:nth-child(4){
-              span:nth-child(3){
-                  width:49%;
-              }
-          }
+    height:pxTorem(50px);
+    padding:0 pxTorem(15px);
+    background:#efefef;
+    display:flex;
+    justify-content:space-between; 
+    border-top:pxTorem(1px) solid #ccc; 
+    .left{
+        p{
+            line-height:pxTorem(25px);
         }
-        
     }
-   
+    .right{
+        display:flex;
+        align-items: center;
+        span{
+            font-size:pxTorem(30px);
+            margin:0 pxTorem(5px);
+            color:#ccc;
+            &.icon-favoritesfilling{
+                color: rgb(39, 39, 185);
+                font-size:pxTorem(28px);
+            }
+        }
+    }
 }

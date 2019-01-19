@@ -1,25 +1,26 @@
 var express = require('express');
 var router = express.Router();
 var mongo=require('mymongo1610');
+var mongodb=require('mongodb');
 
-/* 添加账单 */
+/* 修改分数 */
 router.post('/api/addList', function(req, res, next) {
-    var num=req.body.num,
-        src=req.body.src,
-        title=req.body.title,
-        intro=req.body.intro||'';
-    mongo.insert('mung',{num:num,src:src,title:title,intro:intro},function(err,result){
+    var id=mongodb.ObjectId(req.body.id),
+         grade=req.body.grade;
+        
+    mongo.update('grade',{_id:id},{grade:grade},function(err,result){
         if(err){
           res.json({code:0,msg:err})
         }else{
-          res.json({code:1,msg:'添加成功'})
+          res.json({code:1,msg:'评分完毕'})
         }
     })
 });
 //主页查询
 router.get('/api/getList', function(req, res, next) {
- 
-  mongo.find('mung',function(err,result){
+    var id=req.query.id||'';
+            id=id?{_id:mongodb.ObjectId(id)}:'';
+  mongo.find('grade',id,function(err,result){
       if(err){
         res.json({code:0,msg:err})
       }else{
