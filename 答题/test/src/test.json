@@ -1,0 +1,8 @@
+{"_id":{"$oid":"5c416be2d06addcc85063c47"},"title":"2x2等于？","answer":{"A":"-4","B":"2","C":"4","D":"3"},"result":"C"}
+{"_id":{"$oid":"5c416be2d06addcc85063c48"},"title":"2x3等于？","answer":{"A":"-4","B":"6","C":"4","D":"3"},"result":"B"}
+{"_id":{"$oid":"5c416be2d06addcc85063c49"},"title":"2x4等于？","answer":{"A":"8","B":"2","C":"4","D":"3"},"result":"A"}
+{"_id":{"$oid":"5c416be2d06addcc85063c4a"},"title":"2x1等于？","answer":{"A":"-4","B":"1","C":"4","D":"2"},"result":"D"}
+{"_id":{"$oid":"5c416be2d06addcc85063c4b"},"title":"2x5等于？","answer":{"A":"-4","B":"10","C":"4","D":"3"},"result":"B"}
+{"_id":{"$oid":"5c416be2d06addcc85063c4c"},"title":"2x6等于？","answer":{"A":"-4","B":"2","C":"12","D":"3"},"result":"C"}
+{"_id":{"$oid":"5c416be2d06addcc85063c4d"},"title":"2x7等于？","answer":{"A":"14","B":"2","C":"12","D":"3"},"result":"A"}
+{"_id":{"$oid":"5c416be2d06addcc85063c4e"},"title":"2x8等于？","answer":{"A":"-4","B":"16","C":"12","D":"3"},"result":"B"}

@@ -10,21 +10,26 @@
 <body>
       <div class="wrap">
           <header>
-                <h2>绿豆旅行记账</h2>
                 <div class="head">
-                      <h2>我的默认旅行账单</h2>
-                      <h1 class="sum">0.00</h1>
-                      <h2>我的消费</h2>
+                      <input type="text" placeholder="请输入你要搜索的商品" class="ipt">
+                      <span class="del">X</span>
+                      <span class="btn">搜索</span>
+                </div>
+                <ul class="header show">
+                       <!-- 模糊搜索结果 -->
+                </ul>
+                <div class="nav">
+                     <!-- 搜索历史 -->
                 </div>
           </header>
           <section>
-                 <div class="list">
-                        <!-- 渲染账单数据  -->
-                 </div>
+                <div class="con">
+                        <ul class="list"> 
+                                      
+                        </ul>
+                        <div class="up">上拉加载</div>
+                </div>
           </section>
-          <footer>
-            <span class="btn">+</span>
-          </footer>
       </div>
       <script src="./js/libs/require.js" data-main="./js/page/index.js"></script>
 </body>

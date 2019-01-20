@@ -180,66 +180,68 @@ html {
 
 header {
   width: 100%;
-  height: 4.26667rem;
-  background: rgba(15, 155, 57, 0.959);
-  padding: 0 0.26667rem;
   display: flex;
-  flex-direction: column;
-  color: #fff; }
-  header > h2 {
-    font-size: 0.42667rem;
-    line-height: 0.8rem; }
+  flex-direction: column; }
   header .head {
-    margin-top: 0.53333rem;
-    padding-left: 0.26667rem; }
-    header .head h1 {
-      font-size: 1.06667rem;
-      font-weight: bold;
-      line-height: 1.6rem; }
+    width: 100%;
+    height: 1.17333rem;
+    border-bottom: 0.02667rem solid #efefef;
+    display: flex;
+    align-items: center;
+    padding: 0 0.4rem; }
+    header .head input {
+      flex: 1; }
+    header .head span {
+      padding: 0 0.4rem; }
+  header ul {
+    position: absolute;
+    top: 1.17333rem;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 0.26667rem;
+    z-index: 99; }
+    header ul li {
+      line-height: 0.8rem; }
+    header ul.show {
+      display: none; }
+  header .nav {
+    min-height: 100%;
+    border-bottom: 0.02667rem solid #ccc; }
+    header .nav span {
+      display: inline-block;
+      padding: 0.13333rem 0.4rem;
+      background: orange;
+      color: #fff;
+      margin: 0.26667rem;
+      border-radius: 0.21333rem; }
+    header .nav.navshow {
+      display: none; }
 
 section {
   flex: 1;
-  background: #efefef;
   overflow: hidden; }
-  section .list {
-    display: flex;
-    flex-direction: column; }
-    section .list .con {
-      display: flex;
+  section .con {
+    position: relative; }
+    section .con .list li {
       width: 100%;
-      height: 2.13333rem;
-      margin-bottom: 0.26667rem;
-      background: #fff;
-      align-items: center;
-      padding: 0 0.26667rem; }
-      section .list .con img {
+      height: 2.66667rem;
+      border-bottom: 0.02667rem solid #ccc;
+      padding: 0 0.26667rem;
+      display: flex;
+      align-items: center; }
+      section .con .list li img {
         width: 1.33333rem;
         height: 1.33333rem;
-        margin-right: 0.26667rem; }
-      section .list .con .title {
-        flex: 1; }
-        section .list .con .title h2 {
-          font-size: 0.42667rem;
-          font-weight: bold;
-          line-height: 1.06667rem; }
-      section .list .con span {
-        margin-left: 0.26667rem; }
-
-footer {
-  width: 100%;
-  height: 1.06667rem;
-  background: #fff;
-  position: relative; }
-  footer span {
-    position: absolute;
-    left: 50%;
-    top: -1.6rem;
-    width: 2.13333rem;
-    height: 2.13333rem;
-    background: rgba(15, 155, 57, 0.959);
-    border-radius: 50%;
-    text-align: center;
-    color: #fff;
-    line-height: 2.13333rem;
-    font-size: 1.33333rem;
-    margin-left: -1.06667rem; }
+        margin-right: 0.4rem; }
+    section .con .up {
+      position: absolute;
+      left: 0;
+      bottom: -1.33333rem;
+      width: 100%;
+      height: 1.33333rem;
+      background: #ccc;
+      text-align: center;
+      line-height: 1.33333rem;
+      color: #fff;
+      display: none; }

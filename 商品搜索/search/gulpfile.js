@@ -19,8 +19,11 @@ var sass=require('gulp-sass');
                             source:'/api/getList',target:'http://localhost:3000/api/getList'
                         },
                         {
-                            source:'/api/addList',target:'http://localhost:3000/api/addList'
+                            source:'/api/getSpan',target:'http://localhost:3000/api/getSpan'
                         },
+                        {
+                            source:'/api/addList',target:'http://localhost:3000/api/addList'
+                        }
                     ]
                     }
             ))
